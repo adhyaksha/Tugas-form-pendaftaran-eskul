@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="seluruh">
+        <h1>Form Pendaftaran Ekskul <br> SMK Letris Pamulang</h1>
+
+        <div class="nama">
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" placeholder="Masukan nama siswa">
+        </div>
+
+        <div class="kelas">
+            <label class="kelasL" for="">Kelas:</label>
+                <div class="angkatan">
+                    <label for="kelasX">
+                        <input type="radio" name="kelas" id="kelasX" value="X">X
+                    </label>
+                
+                    <label for="kelasXI">
+                        <input type="radio" name="kelas" id="kelasXI" value="XI">XI
+                    </label>
+                
+                    <label for="kelasXII">
+                        <input type="radio" name="kelas" id="kelasXII" value="XII">XII
+                    </label>
+                </div>
+        </div>
+
+        <div class="jurusan">
+            <label for="jurusan" class="labelJ">Jurusan:</label>
+            <select name="jurusan" id="jurusan">
+                <option value="" disabled selected>-- Pilih Jurusan --</option>
+                <option value="PPLG">PPLG</option>
+                <option value="DKV">DKV</option>
+                <option value="TJKT">TJKT</option>
+                <option value="AKL">AKL</option>
+                <option value="BDP">BDP</option>
+                <option value="MPLB">MPLB</option>
+            </select>
+        </div>
+
+        <div class="ekstrakurikuler">
+            <label for="ekstrakurikuler">ekstrakurikuler</label>
+            <select name="ekstrakurikuler" id="ekstrakurikuler">
+                <option value="" disabled selected>-- Pilih Ekstrakurikuler --</option>
+                <option value="animasi">animasi</option>
+                <option value="paskibra">paskibra</option>
+                <option value="volly">volly</option>
+                <option value="basket">basket</option>
+                <option value="futsal">futsal</option>
+                <option value="letsin">letsin</option>
+                <option value="pmr">pmr</option>
+                <option value="dance modern">dance modern</option>
+            </select>
+        </div>
+
+        <div class="tombol">
+        <button onclick="TambahData()">Tambah Data</button>
+        </div>
+
+        <div class="tabel-siswa">
+            <label for="">Data Pendaftaran Siswa</label>
+            <table border="1" cellspacing="5" cellpadding="50">
+                <tr>
+                    <th>N0</th>
+                    <th>Nama</th>
+                    <th>Kelas</th>
+                    <th>Jusuran</th>
+                    <th>Eskul</th>
+                    <th>Aksi</th>
+                </tr>
+                <tbody id="isiTable"></tbody>
+            </table>
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

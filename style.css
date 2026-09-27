@@ -1,0 +1,197 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* bagian div pembungkus utama */
+.seluruh {
+    display: flex;
+    flex-direction: column;
+    padding:2rem 5rem 0 5rem;
+    gap: 15px;
+    
+}
+
+.seluruh h1{
+    text-align: center;
+    padding-bottom: 2rem;
+    color: rgb(6, 6, 95);
+}
+
+/* bagian div nama */
+.nama {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+
+.nama label{
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+.nama input {
+    padding: 10px;
+    /* width: 15rem; */
+    border-radius: 0.5rem;
+    border: 3px solid rgb(214, 214, 214);
+    outline: none;
+    transition: 0.3s;
+}
+
+.nama input:focus{
+border: 3px solid blue;
+}
+
+/* bagian kelas */
+.kelas {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+}
+
+.kelasL{
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.angkatan {
+    display: flex;
+    gap: 10px;
+}
+
+.angkatan label input{
+    cursor: pointer;
+}
+
+/* bagian div jurusan */
+.jurusan {
+    padding-bottom: 1rem;
+}
+
+.jurusan label{
+    display: flex;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.jurusan select{
+    padding: 10px;
+    border-radius: 0.5rem;
+    border: 3px solid rgb(212, 211, 211);
+    outline: none;
+    transition: 0.3s;
+    
+}
+
+.jurusan select:focus{
+    border: 3px solid blue;
+}
+
+
+/* bagian jurusan  */
+.labelJ{
+    font-weight: bold;
+}
+
+.jurusan{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.jurusan label{
+    padding-bottom: 0.5rem;
+}
+
+/* bagian Ekstrakurikuler */
+.ekstrakurikuler {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+
+.ekstrakurikuler label{
+    padding-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.ekstrakurikuler select{
+    border-radius: 0.5rem;
+    padding: 10px;
+    border: 3px solid rgb(201, 201, 201);
+    outline: none;
+    transition: 0.3s;
+}
+
+.ekstrakurikuler select:focus{
+    border: 3px solid blue;
+}
+
+.tombol {
+    padding-bottom: 2rem;
+}
+.tombol button {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 2px solid rgb(101, 202, 101);
+    background-color: rgb(101, 202, 101);
+    width: 8rem;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+
+.tombol button:hover{
+    background-color: green;
+    border: 2px solid rgb(101, 202, 101);
+}
+
+.tabel-siswa {
+    display: flex;
+    flex-direction: column;
+}
+
+.tabel-siswa label{
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+button{
+    padding: 1rem;
+    /* display:flex; */
+    /* flex-direction: column; */
+}
+
+.edit {
+    background-color: yellow;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.hapus {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.tombol-tengah {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
